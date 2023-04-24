@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/tweet-app/static/js/main.07d3183d.js",
+    "index.html": "/tweet-app/index.html",
+    "main.07d3183d.js.map": "/tweet-app/static/js/main.07d3183d.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.07d3183d.js"
+  ]
+}
