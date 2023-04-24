@@ -1,18 +1,6 @@
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-export const Container = styled.main`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  height: 100vh;
-  padding: 20px;
-  font-size: 42px;
-`;
-
-export const StyledLink = styled(Link)`
+export const Button = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,9 +8,8 @@ export const StyledLink = styled(Link)`
   width: fit-content;
   padding: 10px 20px;
   font-weight: 600;
-  font-size: 28px;
+  font-size: 18px;
   text-transform: uppercase;
-  text-decoration: none;
   color: #373737;
   border: none;
   border-radius: 10.3108px;
