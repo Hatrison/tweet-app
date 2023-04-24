@@ -15,6 +15,10 @@ import { addFollowing, deleteFollowing } from 'redux/following/followingSlice';
 const mainPicture = require('../../assets/main-picture.png');
 const logo = require('../../assets/logo.png');
 
+function numberWithCommas(x) {
+  return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',');
+}
+
 const UserCard = ({ tweet }) => {
   const dispatch = useDispatch();
   const following = useSelector(selectFollowing);
@@ -22,6 +26,8 @@ const UserCard = ({ tweet }) => {
 
   const addToFollowing = () => dispatch(addFollowing(tweet.id));
   const deleteFromFollowing = () => dispatch(deleteFollowing(tweet.id));
+
+  const followers = isFollowing ? tweet.followers + 1 : tweet.followers;
 
   return (
     <Container>
@@ -31,7 +37,8 @@ const UserCard = ({ tweet }) => {
       <Avatar url={tweet.avatar} />
       <Tweets>{tweet.tweets} tweets</Tweets>
       <Followers>
-        {isFollowing ? tweet.followers + 1 : tweet.followers} followers
+        {numberWithCommas(followers)}
+        &nbsp;followers
       </Followers>
       <Button
         isFollowing={isFollowing}
