@@ -7,13 +7,14 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: #EBD8FF;
     font-size: 20px;
-    font-weight: 400;
+    line-height: 1.2;
     margin: 0;
     padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #8c70cc;

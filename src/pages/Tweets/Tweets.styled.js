@@ -7,3 +7,11 @@ export const Container = styled.main`
   height: 100vh;
   padding: 20px;
 `;
+
+export const InnerContainer = styled.div`
+  max-width: 1236px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  margin: 0 auto;
+`;

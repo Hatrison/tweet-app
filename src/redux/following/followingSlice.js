@@ -12,7 +12,8 @@ const followingSlice = createSlice({
       state.following.push(action.payload);
     },
     deleteFollowing(state, action) {
-      return state.following.filter(id => id !== action.payload);
+      const index = state.following.findIndex(id => id === action.payload);
+      state.following.splice(index, 1);
     },
   },
 });
