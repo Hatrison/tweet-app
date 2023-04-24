@@ -30,7 +30,9 @@ const UserCard = ({ tweet }) => {
       <Rect />
       <Avatar url={tweet.avatar} />
       <Tweets>{tweet.tweets} tweets</Tweets>
-      <Followers>{tweet.followers} followers</Followers>
+      <Followers>
+        {isFollowing ? tweet.followers + 1 : tweet.followers} followers
+      </Followers>
       <Button
         isFollowing={isFollowing}
         onClick={isFollowing ? deleteFromFollowing : addToFollowing}
