@@ -23,22 +23,21 @@ export const Button = styled.button`
   background-color: #ebd8ff;
 `;
 
+export const Cover = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+`;
+
 export const Popup = styled.div`
   position: absolute;
-  z-index: 2;
   top: 70px;
   right: 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   gap: 5px;
-`;
-
-export const Cover = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
 `;
