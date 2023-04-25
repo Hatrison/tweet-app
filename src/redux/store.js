@@ -12,6 +12,7 @@ import {
 import storage from 'redux-persist/lib/storage';
 import { tweetsReducer } from './tweets/tweetsSlice';
 import { followingReducer } from './following/followingSlice';
+import { filterReducer } from './filter/filterSlice';
 
 const persistConfig = {
   key: 'following',
@@ -24,6 +25,7 @@ const persistedReducer = persistReducer(persistConfig, followingReducer);
 export const store = configureStore({
   reducer: {
     tweets: tweetsReducer,
+    filter: filterReducer,
     following: persistedReducer,
   },
   middleware: getDefaultMiddleware =>

@@ -8,6 +8,11 @@ export const Container = styled.main`
   padding: 20px;
 `;
 
+export const TopContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
 export const InnerContainer = styled.div`
   max-width: 1236px;
   display: flex;
